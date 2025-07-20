@@ -1,0 +1,378 @@
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navsearch {
+    width: 90%;
+  }
+}
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+*{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    border:border-box;
+}
+/* navigation bar  */
+.navbar{
+     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height:60px;
+    background-color: #0f1111;
+    color: white;
+   
+}
+/* navigation bar Box1 */
+.navlogo{
+    height: 50px;
+    width: 100px;
+    
+}
+.logo{
+    background-image: url(ChatGPT\ Image\ Jul\ 20\,\ 2025\,\ 01_54_59\ PM.png);
+    height: 50px;
+    width: 100%;
+    background-size: cover;
+}
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 2px solid rgb(183, 181, 181);
+}
+/* navigation bar Box2 */
+.add1{
+    color: #cccccc;
+    font-size: .85rem;
+    margin-left: 18px;
+}
+.add2{
+    font-size: 1rem;
+    margin-left:5px;
+}
+.addicon{
+    display: flex;
+    align-items: center;
+    margin-left: 3px;
+}
+/* navigatio bar box3 */
+.navsearch{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(25, 69, 172);
+    width: 620px;
+    height: 40px;
+    border-radius: 5px;
+    
+}
+.serchselect{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    /* now we want only left side of select to be radial curve  */
+    border-top-left-radius: 5px;   
+    border-bottom-left-radius: 5px;
+    border: none;
+    
+}
+.serchinput{
+    width:100%;
+    font-size: 1rem;
+    border: none;
+}
+.serchicon{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: rgb(17, 93, 141);
+    /* jus like left side here we have to make only right side raidially curve */
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #0f1111;
+}
+/* navigation bar Box 4 */
+.asd{
+    font-size: 18px;
+    color: #f3f3f3;
+    
+    cursor: pointer;
+}
+.asd:hover{
+    color:  rgb(14, 65, 143);
+    text-decoration: underline;
+}
+
+/* login option in box 4 */
+/* start of login box */
+/* giving height and width etc to login box */
+.maint{
+   margin-top: 30px;
+   
+    width: 350px;
+    position: absolute;
+    z-index: 12;
+    background-image: url(realistic-style-technology-particle-background_23-2148426704.avif);
+    border: 2px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(25px);
+    box-shadow: 0 0 10px rgba(0,0,0,0,.2);
+    color: rgb(234, 227, 227);
+    border-radius: 15px;
+    padding: 30px 40px;
+  
+
+}
+.maint h1{
+    font-size: 40px;
+    text-align: center;
+}
+/* providing height,width,color etc to input section */
+.maint .inputt{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.inputt input{
+    
+    width: 90%;
+    height: 60%;
+    background:transparent;
+    border :none;
+    outline: none;
+    border : 2px solid rgba(250, 245, 245, 0.2);
+    border-radius: 40px ;
+    font-size: 16px;
+    color: white;
+    padding: 20px 30px 20px 20px ;
+}
+.inputt input::placeholder{
+color: white;
+}
+.inputt i{
+    position:absolute;
+    right:20px;
+    top: 70%;
+    transform: translateY(-50%);
+    font-size: 15px;
+}
+.maint .remmember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 30px 5px 10px;
+}
+.remmember-forgot label input{
+    accent-color: white;
+    margin-right: 3px;
+}
+.remmember-forgot a{
+    color: white;
+    text-decoration: none;
+}
+.remmember-forgot a:hover{
+    text-decoration: underline;
+}
+/* building the login button */
+.maint .btn{
+    margin-top: 15px;
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(0, 0, 0,.2);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+}
+.maint .register{
+    font-size: 14.5px;
+    text-align: center;
+    margin :20px 0 15px;
+
+}
+.register span a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register span a:hover{
+    text-decoration: underline;
+}
+/* end of login box  */
+/* navigation bar Box5 */
+/* stylig and hovering return and orders option */
+.return{
+    font-size: 15px;
+}
+.return:hover{
+    color: rgb(14, 65, 143);
+    text-decoration: underline;
+}
+.order{
+    font-size: 20px;
+}
+.order:hover{
+    color: rgb(14, 65, 143);
+    text-decoration: underline;
+}
+/* navigation bar Box 6 */
+.navcart{
+    display: flex;
+}
+.i-con{
+    font-size: 35px;
+}
+.i-name{
+    margin-left: 9px;
+    font-size: 15px;
+}
+.i-name:hover{
+    color:  rgb(14, 65, 143) ;
+    text-decoration: underline;
+}
+/* end of navigation bar */
+/* now lets built a panel*/
+.panel{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height:40px;
+    background-color: #222f3d;
+    color: white;
+}
+.panelops p{
+    display: inline;
+    margin-left: 12px;
+    
+}
+.pk{
+    font-size: .85rem;
+}
+ .pk:hover{
+   font-size:1.2rem ;
+} 
+.panelops{
+    width: 70%;
+    font-size: 0.85rem;
+}
+.panel-all:hover{
+    color:rgb(14, 65, 143) ;
+    font-size: 1.2rem;
+}
+.offers{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.offers:hover{
+    color: rgb(14, 65, 143);
+    text-decoration: underline;
+}
+/* panels ends here */
+/* photot setion */
+.photo-sectio{
+  height: 600px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #aaa;
+  margin:auto;
+  
+}
+.slides{
+    display:flex;
+    width:300%;
+    animation:slide 14s infinite
+}
+.slides img{
+    width:100%;
+    height:600px;
+    object-fit: cover;
+}
+@keyframes slide{
+    0%{transform:translateX(0%)}
+    33%{transform:translateX(-35%)}
+    44%{transform:translateX(-35%)}
+66%{transform:translateX(-70%)}
+    77%{transform:translateX(0%)}
+    100%{transform:translateX(-0%)}
+}
+/* content section */
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #abaead;
+}
+.box{
+    height:400px;
+    width:23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+    
+    
+}
+.boximg{
+    height: 300px;
+     margin-left: 25px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+   
+}
+.boxcontent h2{
+    text-align: center;
+}
+/* now we add style to footer */
+footer{
+    margin-top: 15px;
+}
+.footpanel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .75rem;
+}
+.footpanel2{
+    background-color:#222f3d ;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+ul{
+    margin-top: 20px;
+
+}
+.footpanel2 ul a{
+    display: block;
+    font-size: .85rem;
+    margin-top: 10px;
+    color:#dddddd
+}
+.footpal{
+    background-color: #091c30;
+    border-top: 0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.log{
+    height: 50px;
+    width: 100px;
+    background-image: url(ChatGPT\ Image\ Jul\ 20\,\ 2025\,\ 01_54_59\ PM.png);
+    background-size: cover;
+}
+
+
+
